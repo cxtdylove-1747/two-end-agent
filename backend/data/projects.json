@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p001",
+    "name": "AI二手课本交易平台",
+    "student": "李华",
+    "stage": "概念验证",
+    "risk_level": "中",
+    "focus": "校园二手交易"
+  },
+  {
+    "id": "p002",
+    "name": "校园低碳出行助手",
+    "student": "王敏",
+    "stage": "市场调研",
+    "risk_level": "高",
+    "focus": "环保出行"
+  },
+  {
+    "id": "p003",
+    "name": "留学生饮食指南",
+    "student": "陈晓",
+    "stage": "MVP",
+    "risk_level": "低",
+    "focus": "跨文化服务"
+  }
+]

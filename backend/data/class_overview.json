@@ -1,0 +1,12 @@
+{
+  "total_projects": 12,
+  "high_risk": 3,
+  "average_score": 7.6,
+  "common_errors": [
+    { "name": "无竞争对手论", "count": 8 },
+    { "name": "1%市场幻觉", "count": 6 },
+    { "name": "盈利模式缺失", "count": 5 },
+    { "name": "渠道成本低估", "count": 4 }
+  ],
+  "teaching_tip": "建议下周重点讲解护城河与渠道成本，结合案例拆解。"
+}
