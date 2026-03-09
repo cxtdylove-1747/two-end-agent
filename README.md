@@ -23,7 +23,7 @@ two-end-agent/
 ## 后端运行
 
 ```bash
-cd /home/runner/work/two-end-agent/two-end-agent/backend
+cd backend
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -36,7 +36,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ## 前端运行
 
 ```bash
-cd /home/runner/work/two-end-agent/two-end-agent/frontend
+cd frontend
 npm install
 npm run dev
 ```
@@ -50,4 +50,10 @@ npm run dev
 
 ```bash
 VITE_API_BASE_URL=http://127.0.0.1:8000
+```
+
+可选跨域配置（后端）：
+
+```bash
+ALLOWED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
 ```

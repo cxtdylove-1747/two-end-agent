@@ -9,9 +9,13 @@ from pydantic import BaseModel
 
 app = FastAPI(title="创新创业智能体 API")
 
+allowed_origins = os.getenv(
+    "ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173"
+).split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[origin.strip() for origin in allowed_origins if origin.strip()],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -109,7 +113,7 @@ async def call_deepseek(user_input: str) -> str:
         data = response.json()
         return data["choices"][0]["message"]["content"].strip()
     except (httpx.HTTPError, KeyError, IndexError, ValueError) as exc:
-        raise HTTPException(status_code=502, detail=f"DeepSeek 调用失败，请稍后重试：{exc}") from exc
+        raise HTTPException(status_code=502, detail="DeepSeek 调用失败，请稍后重试。") from exc
 
 
 @app.post("/api/chat", response_model=ChatResponse)
