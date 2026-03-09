@@ -1,0 +1,51 @@
+.main-layout {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.logo-title {
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.content-wrap {
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.glass-card {
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(31, 84, 210, 0.08);
+}
+
+.loading-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.chat-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-top: 12px;
+  }
+}
