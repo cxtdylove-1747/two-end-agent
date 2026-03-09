@@ -1,0 +1,126 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1d2f 0%, #0f2e4c 45%, #0a1120 100%);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(10, 22, 36, 0.8);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1677ff, #52c41a);
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(22, 119, 255, 0.35);
+}
+
+.brand-title {
+  margin: 0;
+  color: #fff !important;
+}
+
+.brand-subtitle {
+  color: #c6d6ff;
+  font-size: 12px;
+}
+
+.cta-button {
+  margin-left: auto;
+}
+
+.app-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #0a1a2c;
+  min-height: calc(100vh - 128px);
+}
+
+.app-footer {
+  text-align: center;
+  color: #d6e4ff;
+  background: transparent;
+}
+
+.page-container {
+  background: #f7f9fc;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.hero {
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, rgba(22, 119, 255, 0.08), rgba(82, 196, 26, 0.08));
+  border: 1px solid rgba(22, 119, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.feature-card {
+  border: 1px solid #e6f0ff;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-grid;
+  place-items: center;
+  background: rgba(22, 119, 255, 0.1);
+  color: #1677ff;
+  border-radius: 10px;
+}
+
+.chat-list {
+  max-height: 320px;
+  overflow: auto;
+}
+
+.ai-message {
+  background: #f0f5ff;
+  border-radius: 12px;
+}
+
+.user-message {
+  background: #f6ffed;
+  border-radius: 12px;
+}
+
+.clickable-tag {
+  cursor: pointer;
+}
